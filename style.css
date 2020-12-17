@@ -1,1 +1,94 @@
+.header {
+  background-color: #696969;
+  height: 92px;
+}
 
+.navbar-brand {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  letter-spacing: 10px;
+  padding-left: 30px;
+  padding: 0 250px 0 130px;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #999;
+}
+
+.navbar-nav {
+  font-size: 14px;
+}
+
+.dropdown-menu {
+  background-color: black;
+  border-radius: 0;
+  padding: 0;
+  top: 55px;
+}
+
+.dropdown-item {
+  color: white;
+  font-family: Verdana;
+  font-size: 14px;
+  padding-block-start: 13px;
+  padding-block-end: 13px;
+}
+.dropdown-item:hover {
+  color: white;
+  background-color: #734e30;
+}
+
+/*モバイル用*/
+@media screen and (max-width: 1024px) {
+  .header {
+    background-color: black;
+    height: 60px;
+  }
+
+  .navbar-brand {
+    color: white;
+    font-size: 27px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-size: 5mm;
+    padding: 0;
+  }
+  .nav-item {
+    color: white;
+    background-color: black;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 20px;
+  }
+  .dropdown-item {
+    font-size: 12px;
+  }
+
+  .dropdown-item:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .dropdown-menu {
+    background-color: black;
+    border-radius: 0;
+    margin-top: 0;
+  }
+}
