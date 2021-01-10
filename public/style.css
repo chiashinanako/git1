@@ -10,11 +10,11 @@ header {
   position: absolute;
 }
 
-.navbar {
+header .navbar {
   padding-top: 20px;
 }
 
-.navbar-brand {
+header .navbar-brand {
   color: #fff;
   font-family: "Times New Roman", Times, serif;
   font-size: 35px;
@@ -23,35 +23,39 @@ header {
   pointer-events: none;
 }
 
-.nav-item {
+header .nav-item.nav-item {
   padding: 0 10px;
 }
 
-.nav-link {
+header .nav-link {
   color: #fff;
 }
 
-.nav-link:hover {
+header .nav-link:hover {
   color: #c0c0c0;
 }
 
-.navbar-nav {
+header .navbar-nav {
   font-size: 14px;
   margin-left: 200px;
 }
 
-.navbar-nav ul {
+header .navbar-nav ul {
   display: inline;
 }
 
-.dropdown-menu {
+header .dropdown-toggle::after {
+  display: none;
+}
+
+header .dropdown-menu {
   background-color: #000;
   padding: 0;
   top: 55px;
   border-radius: 0;
 }
 
-.dropdown-item {
+header .dropdown-item {
   color: #fff;
   font-family: Verdana;
   font-size: 14px;
@@ -59,7 +63,7 @@ header {
   padding-block-end: 13px;
 }
 
-.dropdown-item:hover {
+header .dropdown-item:hover {
   color: #fff;
   background-color: #734e30;
 }
@@ -71,33 +75,31 @@ header {
     height: 56px;
   }
 
-  .navbar {
-    padding-top: 8px;
-    padding-left: 0;
-    padding-right: 0;
+  header .navbar {
+    padding: 8px 0 0 0;
   }
 
-  .navbar-brand {
+  header .navbar-brand {
     color: #fff;
     font-size: 27px;
     margin-left: 20px;
   }
 
-  .navbar-brand:hover {
+  header .navbar-brand:hover {
     color: #fff;
   }
 
-  .navbar-toggler {
-    border-color: #000;
+  header .navbar-toggler:focus {
+    outline: 0;
   }
 
-  .navbar-toggler .navbar-toggler-icon {
+  header .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     background-size: 5mm;
     padding: 0;
   }
 
-  .nav-item {
+  header .nav-item {
     color: #fff;
     background-color: #000;
     font-size: 13px;
@@ -107,12 +109,12 @@ header {
     padding-block-end: 5px;
   }
 
-  .dropdown-item:hover {
+  header .dropdown-item:hover {
     background-color: #000;
     color: #fff;
   }
 
-  .dropdown-menu {
+  header .dropdown-menu {
     background-color: #000;
     margin-top: 0;
   }
