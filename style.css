@@ -93,10 +93,26 @@ header .dropdown-item:hover {
     outline: 0;
   }
 
-  header .navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    background-size: 5mm;
-    padding: 0;
+  header span {
+    width: 15px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    transition: 0.3s;
+    z-index: 100;
+  }
+
+  .span1 {
+    top: 20px;
+  }
+
+  .span2 {
+    top: 27px;
+  }
+
+  .span3 {
+    top: 34px;
   }
 
   header .nav-item {
