@@ -86,32 +86,28 @@ header .dropdown-item:hover {
     outline: 0;
   }
 
-  header span {
+  header span,
+  span::before,
+  span::after {
     width: 15px;
-    height: 3px;
+    height: 2.5px;
     background-color: #fff;
     position: absolute;
     right: 20px;
     transition: 0.3s;
     z-index: 100;
+    top: 18px;
+    content: "";
   }
 
-  header span {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+  header span::before {
+    top: 12px;
+    right: 0;
   }
 
-  .\31 {
-    top: 20px;
-  }
-
-  .\32 {
-    top: 27px;
-  }
-
-  .\33 {
-    top: 34px;
+  header span::after {
+    top: 6px;
+    right: 0;
   }
 
   header .nav-item {
