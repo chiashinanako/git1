@@ -4,7 +4,9 @@ body {
 
 header {
   background-color: #696969;
-  height: 92px;
+  padding-left: 130px;
+  padding-right: 130px;
+  height: 80px;
   width: 100%;
   z-index: 99;
   position: absolute;
@@ -14,11 +16,9 @@ header .navbar {
   padding-top: 20px;
 }
 
-header .navbar-brand {
-  color: #fff;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 35px;
-  letter-spacing: 10px;
+header img {
+  width: 125px;
+  height: 30px;
 }
 
 header .nav-item.nav-item {
@@ -31,11 +31,11 @@ header .nav-link {
 
 header .nav-link:hover {
   color: #c0c0c0;
+  transition: 1s;
 }
 
 header .navbar-nav {
   font-size: 14px;
-  margin-left: 200px;
 }
 
 header .dropdown-toggle::after {
@@ -67,47 +67,54 @@ header .dropdown-item:hover {
     background-color: #000;
     color: #fff;
     height: 58px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  header img {
+    padding-left: 40px;
   }
 
   header .navbar {
     padding: 8px 0 0 0;
   }
 
-  header .navbar-brand {
-    font-size: 27px;
-    margin-left: 20px;
-  }
-
-  header .navbar-brand:hover {
-    color: #fff;
-  }
-
   header .navbar-toggler:focus {
     outline: 0;
   }
 
-  header span,
-  span::before,
-  span::after {
-    width: 15px;
+  header .humburger-icon {
+    width: 18px;
     height: 2.5px;
+    color: #333;
     background-color: #fff;
-    position: absolute;
-    right: 20px;
-    transition: 0.3s;
-    z-index: 100;
-    top: 18px;
+    position: relative;
+    margin-top: 25px;
+    right: 10px;
+  }
+
+  header .humburger-icon {
+    top: -5px;
+  }
+
+  header .humburger-icon::before {
     content: "";
+    position: absolute;
+    top: -6px;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background-color: #fff;
   }
 
-  header span::before {
-    top: 12px;
+  header .humburger-icon::after {
+    content: "";
+    position: absolute;
+    top: -13px;
+    width: 100%;
+    height: 100%;
     right: 0;
-  }
-
-  header span::after {
-    top: 6px;
-    right: 0;
+    background-color: #fff;
   }
 
   header .nav-item {
