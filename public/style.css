@@ -37,7 +37,7 @@ header .nav-link:hover {
 
 header .navbar-nav {
   font-size: 14px;
-  line-height: 40px;
+  line-height: 53px;
 }
 
 header .dropdown-toggle::after {
@@ -80,13 +80,14 @@ header .dropdown-item:hover {
 
   header .navbar-expand-lg {
     margin: 0;
+    height: 50px;
   }
 
   header img {
     height: 20px;
     width: 130px;
     padding-left: 30px;
-    padding-top: 5px;
+    padding-top: 3px;
   }
 
   header .navbar-toggler {
@@ -103,7 +104,7 @@ header .dropdown-item:hover {
   }
 
   header .humburger-icon {
-    top: -5px;
+    top: -7px;
   }
 
   header .humburger-icon::before {
