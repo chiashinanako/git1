@@ -129,14 +129,26 @@ header .dropdown-item:hover {
 
   header .nav-link {
     margin-left: 20px;
+    height: 50px;
+    padding: 0;
   }
+
   header .nav-item {
     background-color: #000;
-    font-size: 13px;
+    font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 60px;
-    padding-block-start: 5px;
+  }
+
+  header .dropdown-menu {
+    padding-left: 15px;
+    top: 0;
+  }
+
+  header .dropdown-item {
+    font-size: 11px;
+    height: 45px;
     padding: 0;
+    margin-left: 23px;
   }
 
   header .dropdown-item:hover {
