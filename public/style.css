@@ -68,6 +68,7 @@ header a {
 header .dropdown-item:hover {
   color: #fff;
   background-color: #734e30;
+  transition: 0.7s;
 }
 
 /*モバイル用*/
