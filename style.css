@@ -10,7 +10,7 @@ header {
 }
 
 header .navbar-expand-lg {
-  margin: 0 5% 0 5%;
+  margin: 0 5%;
 }
 
 header .navbar {
@@ -75,7 +75,6 @@ header .dropdown-item:hover {
 @media screen and (max-width: 991px) {
   header {
     background-color: #000;
-    color: #fff;
     height: 50px;
   }
 
@@ -87,45 +86,38 @@ header .dropdown-item:hover {
   header img {
     height: 20px;
     width: 130px;
-    padding-left: 30px;
-    padding-top: 3px;
+    padding: 3px 0 0 30px;
   }
 
   header .navbar-toggler {
     outline: 0;
+    position: relative;
   }
 
   header .humburger-icon {
     width: 18px;
-    height: 2.5px;
+    height: 3px;
     color: #333;
     background-color: #fff;
-    position: relative;
-    margin-top: 25px;
+    margin-top: 23px;
+    top: -9px;
   }
 
-  header .humburger-icon {
-    top: -7px;
-  }
-
-  header .humburger-icon::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    width: 100%;
-    height: 100%;
-    right: 0;
-    background-color: #fff;
-  }
-
+  header .humburger-icon::before,
   header .humburger-icon::after {
     content: "";
     position: absolute;
-    top: -13px;
-    width: 100%;
-    height: 100%;
-    right: 0;
+    top: 10px;
+    left: 12px;
+    width: 18px;
+    height: 3px;
     background-color: #fff;
+    right: 0;
+  }
+
+  header .humburger-icon::after {
+    top: 18px;
+    left: 12px;
   }
 
   header .nav-link {
