@@ -10,7 +10,7 @@ header {
 }
 
 header .navbar-expand-lg {
-  margin: 0 5%;
+  margin: 0 70px;
 }
 
 header .navbar {
@@ -51,7 +51,6 @@ header .dropdown-item {
   color: #fff;
   font-family: Verdana;
   font-size: 14px;
-  line-height: 60px;
   padding-left: 20px;
 }
 
@@ -89,22 +88,18 @@ header .dropdown-item:hover {
     outline: 0;
     position: relative;
     height: 50px;
-    top: -2px;
   }
 
   header .humburger-icon {
     width: 18px;
     height: 3px;
-    color: #333;
     background-color: #fff;
-    margin-top: 23px;
   }
 
   header .humburger-icon::before,
   header .humburger-icon::after {
     content: "";
     position: absolute;
-    top: 16px;
     left: 12px;
     width: 18px;
     height: 3px;
@@ -112,14 +107,22 @@ header .dropdown-item:hover {
     right: 0;
   }
 
+  header .humburger-icon::before {
+    top: 16px;
+  }
+
   header .humburger-icon::after {
-    top: 25px;
+    top: 29px;
   }
 
   header .nav-link {
     margin-left: 20px;
     height: 50px;
     padding: 0;
+  }
+
+  header .nav-link:hover {
+    color: #fff;
   }
 
   header .nav-item {
@@ -135,7 +138,7 @@ header .dropdown-item:hover {
 
   header .dropdown-item {
     font-size: 11px;
-    height: 45px;
+    height: 48px;
     padding: 0;
     margin-left: 23px;
   }
