@@ -17,8 +17,8 @@ header .navbar {
 }
 
 header img {
-  width: 125px;
-  height: 20px;
+  width: 130px;
+  height: auto;
 }
 
 header .nav-item {
@@ -69,7 +69,6 @@ header .dropdown-item:hover {
   header {
     background-color: #000;
     height: 50px;
-    position: relative;
   }
 
   header .navbar-expand-lg {
@@ -78,10 +77,9 @@ header .dropdown-item:hover {
   }
 
   header img {
-    height: 20px;
     width: 130px;
+    height: auto;
     padding: 0;
-    position: absolute;
     left: 20px;
     top: 15px;
   }
