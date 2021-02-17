@@ -18,16 +18,18 @@ header .navbar {
 
 header img {
   width: 130px;
-  height: auto;
 }
 
 header .nav-item {
   padding: 0 10px;
 }
 
+header .nav-link {
+  transition-duration: 1s;
+}
+
 header .nav-link:hover {
   color: #c0c0c0;
-  transition: 1s;
 }
 
 header .navbar-nav {
@@ -51,6 +53,7 @@ header .dropdown-item {
   font-family: Verdana;
   font-size: 14px;
   padding-left: 20px;
+  transition-duration: 0.7s;
 }
 
 header a {
@@ -61,7 +64,6 @@ header a {
 header .dropdown-item:hover {
   color: #fff;
   background-color: #734e30;
-  transition: 0.7s;
 }
 
 /*モバイル用*/
@@ -76,9 +78,11 @@ header .dropdown-item:hover {
     height: 50px;
   }
 
+  header .logo {
+    margin-left: 20px;
+  }
+
   header img {
-    width: 130px;
-    height: auto;
     padding: 0;
     left: 20px;
     top: 15px;
