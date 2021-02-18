@@ -10,6 +10,7 @@ header {
 
 header .navbar-expand-lg {
   margin: 0 70px;
+  height: 70px;
 }
 
 header .navbar {
@@ -75,6 +76,7 @@ header .dropdown-item:hover {
 
   header .navbar-expand-lg {
     margin: 0;
+    height: 50px;
   }
 
   header .logo {
