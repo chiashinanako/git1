@@ -72,23 +72,22 @@ header .dropdown-item:hover {
 }
 
 main #top-area .top-img {
+  background-image: url(./img/cafe.jpg);
   display: flex;
   background-size: cover;
   height: 66vw;
   width: 100%;
   text-align: center;
+  justify-content: center;
 }
 
 main #top-area .top-img p {
-  margin: auto;
   font-size: 33px;
   font-weight: bolder;
   writing-mode: vertical-rl;
-  color: #ffffff;
+  color: #fff;
   white-space: nowrap;
-  padding-top: 40px;
   font-family: "Times New Roman", Times, serif;
-  text-align: left;
 }
 
 main #top-area .top-overview {
@@ -209,11 +208,6 @@ main #top-area .top-overview p {
 
   main #top-area .top-overview {
     height: auto;
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  main #top-area .top-overview {
     padding: 32px 18px;
   }
 
