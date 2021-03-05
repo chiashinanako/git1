@@ -1,5 +1,6 @@
 body {
   width: 100%;
+  height: 100%;
 }
 
 header {
@@ -81,11 +82,13 @@ main #top-area .top-img {
   justify-content: center;
 }
 
-main #top-area .top-img p {
+main #top-area .top-img .image-desc {
   font-size: 33px;
   font-weight: bolder;
   writing-mode: vertical-rl;
   color: #fff;
+  margin: auto;
+  text-align: left;
   white-space: nowrap;
   font-family: "Times New Roman", Times, serif;
 }
@@ -202,7 +205,11 @@ main #top-area .top-overview p {
     color: #fff;
   }
 
-  main #top-area .top-img p {
+  main #top-area .top-img {
+    min-height: 450px;
+  }
+
+  main #top-area .top-img .image-desc {
     font-size: 19px;
   }
 
