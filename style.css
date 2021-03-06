@@ -124,6 +124,7 @@ main #top-area .top-overview p {
   header {
     background-color: #000;
     height: 50px;
+    position: relative;
   }
 
   header .navbar-expand-lg {
@@ -205,8 +206,13 @@ main #top-area .top-overview p {
     color: #fff;
   }
 
+  main #top-area {
+    position: absolute;
+    top: 50px;
+  }
+
   main #top-area .top-img {
-    min-height: 450px;
+    min-height: 400px;
   }
 
   main #top-area .top-img .image-desc {
