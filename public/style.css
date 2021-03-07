@@ -1,11 +1,16 @@
 body {
   width: 100%;
+  height: 100%;
 }
 
 header {
-  background-color: #696969;
+  background-color: rgba(0, 0, 0, 0.7);
   height: 70px;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
 header .navbar-expand-lg {
@@ -67,11 +72,59 @@ header .dropdown-item:hover {
   background-color: #734e30;
 }
 
+main #top-area .top-img {
+  background-image: url(./img/cafe.jpg);
+  display: flex;
+  background-size: cover;
+  height: 66vw;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+main #top-area .top-img .image-desc {
+  font-size: 33px;
+  font-weight: bolder;
+  writing-mode: vertical-rl;
+  color: #fff;
+  margin: auto;
+  text-align: left;
+  white-space: nowrap;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main #top-area .top-overview {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  padding: 35px 30px;
+}
+
+main #top-area .top-overview h1,
+p {
+  vertical-align: middle;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+main #top-area .top-overview h1 {
+  font-size: 34px;
+  padding-bottom: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main #top-area .top-overview p {
+  font-size: 12px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
 /*モバイル用*/
 @media screen and (max-width: 991px) {
   header {
     background-color: #000;
     height: 50px;
+    position: relative;
   }
 
   header .navbar-expand-lg {
@@ -150,5 +203,32 @@ header .dropdown-item:hover {
   header .dropdown-item:hover {
     background-color: #000;
     color: #fff;
+  }
+
+  main #top-area {
+    position: absolute;
+    top: 50px;
+  }
+
+  main #top-area .top-img {
+    min-height: 400px;
+  }
+
+  main #top-area .top-img .image-desc {
+    font-size: 19px;
+  }
+
+  main #top-area .top-overview {
+    height: auto;
+    padding: 32px 18px;
+  }
+
+  main #top-area .top-overview h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  main #top-area .top-overview p {
+    line-height: 30px;
   }
 }
