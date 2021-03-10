@@ -313,6 +313,6 @@ main #main-service .cafe-overview p {
 @media screen and (max-width: 700px) {
   main #main-service {
     position: absolute;
-    top: 87vh;
+    top: 88vh;
   }
 }
