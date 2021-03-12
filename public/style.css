@@ -119,51 +119,12 @@ main #top-area .top-overview p {
   letter-spacing: 2px;
 }
 
-main #main-service {
-  padding-top: 135px;
-  padding-bottom: 80px;
-}
-
-main #main-service .container {
-  width: 100%;
-}
-
-main #main-service .l-inner {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-main #main-service .pic {
-  display: inline-block;
-  width: 25%;
-}
-
-main #main-service .cafe-overview {
-  background-color: #f5f5f5;
-  width: 100%;
-  text-align: center;
-  padding: 51px 20px 49px 20px;
-}
-
-main #main-service .cafe-overview h2 {
-  color: #442606;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 36px;
-  line-height: 70px;
-}
-
-main #main-service .cafe-overview p {
-  text-align: center;
-  font-size: 13px;
-  font-family: "Segoe UI";
-  line-height: 37px;
-}
-
 /*モバイル用*/
 @media screen and (max-width: 991px) {
   header {
     background-color: #000;
     height: 50px;
+    position: relative;
   }
 
   header .navbar-expand-lg {
