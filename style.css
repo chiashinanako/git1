@@ -101,8 +101,7 @@ main #top-area .top-overview {
 }
 
 main #top-area .top-overview h1,
-p {
-  vertical-align: middle;
+main #top-area .top-overview p {
   margin-bottom: 0;
   text-align: center;
 }
@@ -120,8 +119,7 @@ main #top-area .top-overview p {
 }
 
 main #main-service {
-  margin-top: 135px;
-  margin-bottom: 80px;
+  margin: 135px 80px 80px 80px;
 }
 
 main #main-service .cafe-overview {
@@ -141,14 +139,14 @@ main #main-service .cafe-overview p {
   text-align: center;
   font-size: 13px;
   font-family: "Segoe UI";
-  line-height: 37px;
+  line-height: 3;
 }
 
 main #main-service .cafe-img {
   margin: 0;
 }
 
-main #main-service div.col-6.col-lg-3 {
+main #main-service img.col-6.col-lg-3 {
   padding: 0;
 }
 
@@ -265,15 +263,10 @@ main #main-service div.col-6.col-lg-3 {
   }
 
   main #main-service {
-    margin-top: 0;
-  }
-
-  main #main-service .container {
-    padding: 0 40px;
+    margin: 30px 30px 80px 30px;
   }
 
   main #main-service .cafe-overview {
-    height: auto;
     padding: 30px 23px;
   }
 
