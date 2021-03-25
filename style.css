@@ -154,51 +154,46 @@ main #main-service img.col-6.col-lg-3 {
   padding: 0;
 }
 
-main #three-card {
+main #seconddary-service {
   margin-bottom: 85px;
 }
 
-main#three-card .card-deck {
-  position: relative;
-}
-
-main #three-card .card {
+main #seconddary-service .card {
   border: none;
 }
 
-main #three-card .card .triangle {
-  width: 0;
-  height: 0;
-  border-top: 50px solid #fff;
-  border-left: 50px solid #fff;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  display: -webkit-inline-box;
-  position: absolute;
-}
-
-main #three-card .card .triangle p {
+main #seconddary-service .card h2 {
   color: #442606;
+  z-index: 1;
   font-weight: bolder;
   font-size: 18px;
-  z-index: 2;
   position: absolute;
-  top: -55px;
-  left: -50px;
 }
 
-main #three-card .card .card-body {
+main #seconddary-service .card a img {
+  width: 100%;
+}
+
+main #seconddary-service .card a.triangle::before {
+  content: "";
+  border-color: #fff transparent transparent #fff;
+  border-style: solid;
+  border-width: 50px;
+  position: absolute;
+}
+
+main #seconddary-service .card .card-body {
   background-color: #f5f5f5;
   padding: 35px;
 }
 
-main #three-card .card .card-body p {
+main #seconddary-service .card .card-body p {
   font-size: 13px;
   font-family: "Segoe UI";
   line-height: 3;
 }
 
-main #three-card .card .card-body a.card-link {
+main #seconddary-service .card .card-body a.card-link {
   color: #fff;
   font-size: 12px;
   background-color: #000;
@@ -211,7 +206,7 @@ main #three-card .card .card-body a.card-link {
   max-width: 200px;
 }
 
-main #three-card .card .card-body a.card-link:hover {
+main #seconddary-service .card .card-body a.card-link:hover {
   background-color: #734e30;
 }
 
@@ -339,15 +334,19 @@ main #three-card .card .card-body a.card-link:hover {
     line-height: 2;
   }
 
-  main #three-card {
+  main #seconddary-service {
     margin-bottom: 30px;
   }
 
-  main #three-card .card .card-body p {
+  main #seconddary-service .card {
+    margin-bottom: 20px;
+  }
+
+  main #seconddary-service .card .card-body p {
     line-height: 2;
   }
 
-  main #three-card .card .card-body a.card-link {
-    max-height: 45px;
+  main #seconddary-service .card .card-body a.card-link {
+    height: 45px;
   }
 }
