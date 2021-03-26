@@ -154,27 +154,26 @@ main #main-service img.col-6.col-lg-3 {
   padding: 0;
 }
 
-main #seconddary-service {
+main #secondary-service {
   margin-bottom: 85px;
 }
 
-main #seconddary-service .card {
+main #secondary-service .card {
   border: none;
 }
 
-main #seconddary-service .card h2 {
+main #secondary-service .card h2 {
   color: #442606;
-  z-index: 1;
   font-weight: bolder;
   font-size: 18px;
   position: absolute;
 }
 
-main #seconddary-service .card a img {
+main #secondary-service .card a img {
   width: 100%;
 }
 
-main #seconddary-service .card a.triangle::before {
+main #secondary-service .card a.triangle::before {
   content: "";
   border-color: #fff transparent transparent #fff;
   border-style: solid;
@@ -182,18 +181,18 @@ main #seconddary-service .card a.triangle::before {
   position: absolute;
 }
 
-main #seconddary-service .card .card-body {
+main #secondary-service .card .card-body {
   background-color: #f5f5f5;
   padding: 35px;
 }
 
-main #seconddary-service .card .card-body p {
+main #secondary-service .card .card-body p {
   font-size: 13px;
   font-family: "Segoe UI";
   line-height: 3;
 }
 
-main #seconddary-service .card .card-body a.card-link {
+main #secondary-service .card .card-body a.card-link {
   color: #fff;
   font-size: 12px;
   background-color: #000;
@@ -206,7 +205,7 @@ main #seconddary-service .card .card-body a.card-link {
   max-width: 200px;
 }
 
-main #seconddary-service .card .card-body a.card-link:hover {
+main #secondary-service .card .card-body a.card-link:hover {
   background-color: #734e30;
 }
 
@@ -334,19 +333,19 @@ main #seconddary-service .card .card-body a.card-link:hover {
     line-height: 2;
   }
 
-  main #seconddary-service {
+  main #secondary-service {
     margin-bottom: 30px;
   }
 
-  main #seconddary-service .card {
+  main #secondary-service .card {
     margin-bottom: 20px;
   }
 
-  main #seconddary-service .card .card-body p {
+  main #secondary-service .card .card-body p {
     line-height: 2;
   }
 
-  main #seconddary-service .card .card-body a.card-link {
+  main #secondary-service .card .card-body a.card-link {
     height: 45px;
   }
 }
