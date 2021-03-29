@@ -230,7 +230,8 @@ main #tertiary-service .news-event .text h2 {
 main #tertiary-service .news-event .text p,
 main #tertiary-service .news-event a h3 {
   font-size: 15px;
-  margin-left: 15px;
+  padding-left: 15px;
+  margin: 0;
   color: #000;
   font-weight: lighter;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
@@ -238,9 +239,14 @@ main #tertiary-service .news-event a h3 {
 }
 
 main #tertiary-service .news-event a.list-group-item {
-  height: 78px;
+  height: 77px;
   width: auto;
   text-decoration: none;
+  border-bottom: none;
+}
+
+main #tertiary-service .news-event a.list-group-item.last {
+  border-bottom: 1px solid #c0c0c0;
 }
 
 main #tertiary-service .news-event a.list-group-item time {
@@ -254,7 +260,6 @@ main #tertiary-service .event-group article a {
 }
 
 main #tertiary-service .event-group a.list-group-item {
-  width: auto;
   height: auto;
   padding: 0;
   max-height: 130px;
@@ -265,7 +270,6 @@ main #tertiary-service .event-group img {
 }
 
 main #tertiary-service .event-group a text {
-  display: block;
   padding: 30px;
   overflow: hidden;
 }
@@ -284,14 +288,15 @@ main #tertiary-service a.summary {
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   text-align: right;
+  cursor: pointer;
 }
 
 main #tertiary-service a.summary:hover {
   color: #c0c0c0;
 }
 
-main #tertiary-service .mgr-20 {
-  margin-right: 20px;
+main #tertiary-service a.summary::after {
+  content: "＞";
 }
 
 /*モバイル用*/
@@ -450,6 +455,12 @@ main #tertiary-service .mgr-20 {
   main #tertiary-service .news-event a h3 {
     font-size: 13px;
     overflow: hidden;
+  }
+
+  main #tertiary-service .news-event a h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   main #tertiary-service img {
