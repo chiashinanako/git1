@@ -239,14 +239,8 @@ main #tertiary-service .news-event a h3 {
 }
 
 main #tertiary-service .news-event a.list-group-item {
-  height: 77px;
   width: auto;
   text-decoration: none;
-  border-bottom: none;
-}
-
-main #tertiary-service .news-event a.list-group-item.last {
-  border-bottom: 1px solid #c0c0c0;
 }
 
 main #tertiary-service .news-event a.list-group-item time {
