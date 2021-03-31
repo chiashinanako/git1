@@ -227,6 +227,12 @@ main #tertiary-service .news-event .text h2 {
   font-size: 45px;
 }
 
+main #tertiary-service .news-event a h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 main #tertiary-service .news-event .text p,
 main #tertiary-service .news-event a h3 {
   font-size: 15px;
@@ -240,6 +246,7 @@ main #tertiary-service .news-event a h3 {
 
 main #tertiary-service .news-event a.list-group-item {
   width: auto;
+  height: 77px;
   text-decoration: none;
 }
 
@@ -247,6 +254,10 @@ main #tertiary-service .news-event a.list-group-item time {
   color: #c0c0c0;
   font-size: 12px;
   padding-left: 14px;
+}
+
+main #tertiary-service .event-group article .event-group {
+  width: 100%;
 }
 
 main #tertiary-service .event-group article a {
@@ -259,37 +270,57 @@ main #tertiary-service .event-group a.list-group-item {
   max-height: 130px;
 }
 
-main #tertiary-service .event-group img {
-  width: 196px;
-}
-
-main #tertiary-service .event-group a text {
-  padding: 30px;
+main #tertiary-service .event-group div.img_box {
   overflow: hidden;
+  width: 40%;
 }
 
-main #tertiary-service .event-group a text h3 {
+main #tertiary-service .event-group img.img_box {
+  transition: 1s;
+  width: 100%;
+  height: 130px;
+}
+
+main #tertiary-service .event-group img.img_box:hover {
+  transform: scale(1.2);
+}
+
+main #tertiary-service .event-group a .text {
+  padding: 44px 30px;
+  overflow: hidden;
+  margin: 0;
+  display: block;
+  width: 60%;
+}
+
+main #tertiary-service .event-group a .text h3 {
   margin-bottom: 0;
 }
 
-main #tertiary-service a.summary {
+main #tertiary-service ul li {
+  width: 100%;
+  list-style: none;
+  text-align: right;
+}
+
+main #tertiary-service ul li a {
   text-decoration: none;
   color: #000;
-  padding: 25px 0;
+  margin-top: 20px;
   transition-duration: 0.7s;
   font-weight: lighter;
   font-size: 14px;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  text-align: right;
   cursor: pointer;
+  display: inline-block;
 }
 
-main #tertiary-service a.summary:hover {
+main #tertiary-service ul li a:hover {
   color: #c0c0c0;
 }
 
-main #tertiary-service a.summary::after {
+main #tertiary-service ul li a::after {
   content: "＞";
 }
 
@@ -451,13 +482,7 @@ main #tertiary-service a.summary::after {
     overflow: hidden;
   }
 
-  main #tertiary-service .news-event a h3 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  main #tertiary-service img {
+  main #tertiary-service .event-group div.img_box {
     display: none;
   }
 
@@ -465,7 +490,8 @@ main #tertiary-service a.summary::after {
     height: 78px;
   }
 
-  main #tertiary-service .event-group a text {
+  main #tertiary-service .event-group a div.text {
     padding: 20px;
+    width: 100%;
   }
 }
