@@ -297,13 +297,13 @@ main #tertiary-service .event-group a .text h3 {
   margin-bottom: 0;
 }
 
-main #tertiary-service ul li {
+main #tertiary-service .summary {
   width: 100%;
   list-style: none;
   text-align: right;
 }
 
-main #tertiary-service ul li a {
+main #tertiary-service .summary a {
   text-decoration: none;
   color: #000;
   margin-top: 20px;
@@ -316,11 +316,11 @@ main #tertiary-service ul li a {
   display: inline-block;
 }
 
-main #tertiary-service ul li a:hover {
+main #tertiary-service .summary a:hover {
   color: #c0c0c0;
 }
 
-main #tertiary-service ul li a::after {
+main #tertiary-service .summary a::after {
   content: "＞";
 }
 
