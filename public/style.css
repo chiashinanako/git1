@@ -239,7 +239,7 @@ main #tertiary-service .news-event a h3 {
   padding-left: 15px;
   margin: 0;
   color: #000;
-  font-weight: lighter;
+  font-weight: 300;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
@@ -270,18 +270,18 @@ main #tertiary-service .event-group a.list-group-item {
   max-height: 130px;
 }
 
-main #tertiary-service .event-group div.img_box {
+main #tertiary-service div.img-box {
   overflow: hidden;
-  width: 40%;
+  max-width: 40%;
 }
 
-main #tertiary-service .event-group img.img_box {
-  transition: 1s;
+main #tertiary-service div.img-box img {
+  transition-duration: 1s;
   width: 100%;
   height: 130px;
 }
 
-main #tertiary-service .event-group img.img_box:hover {
+main #tertiary-service div.img-box img:hover {
   transform: scale(1.2);
 }
 
@@ -308,7 +308,7 @@ main #tertiary-service .summary a {
   color: #000;
   margin-top: 20px;
   transition-duration: 0.7s;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 14px;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -482,16 +482,18 @@ main #tertiary-service .summary a::after {
     overflow: hidden;
   }
 
-  main #tertiary-service .event-group div.img_box {
-    display: none;
+  main #tertiary-service div.img-box img {
+    height: 130px;
+    width: auto;
   }
+}
 
-  main #tertiary-service .event-group a.list-group-item {
-    height: 78px;
+@media screen and (max-width: 767px) {
+  main #tertiary-service div.img-box {
+    display: none;
   }
 
   main #tertiary-service .event-group a div.text {
     padding: 20px;
-    width: 100%;
   }
 }
