@@ -272,7 +272,7 @@ main #tertiary-service .event-group a.list-group-item {
 
 main #tertiary-service div.img-box {
   overflow: hidden;
-  max-width: 40%;
+  width: 40%;
 }
 
 main #tertiary-service div.img-box img {
@@ -482,9 +482,17 @@ main #tertiary-service .summary a::after {
     overflow: hidden;
   }
 
+  main main #tertiary-service .event-group a.list-group-item {
+    padding: 20px;
+  }
+
   main #tertiary-service div.img-box img {
     height: 130px;
     width: auto;
+  }
+
+  main #tertiary-service .event-group a .text {
+    width: 100%;
   }
 }
 
