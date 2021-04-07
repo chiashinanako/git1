@@ -348,6 +348,7 @@ main #plan .text h2 {
 }
 
 main #plan .text p {
+  color: #000;
   font-size: 15px;
   line-height: 3;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
@@ -359,6 +360,11 @@ main #plan table {
   text-align: center;
   display: inline-flex;
   margin-bottom: 30px;
+}
+
+main #plan table.day-plan th,
+main #plan table.premium-plan th {
+  border-right: 1px solid #a19283;
 }
 
 main #plan table th,
@@ -377,22 +383,26 @@ main #plan table th {
 }
 
 main #plan table td {
+  color: #000;
   border: 1px solid #c0c0c0;
   font-size: 14px;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
+main #plan table td.price {
+  border-top: 0;
+}
+
 main #plan table.standard-plan th,
 main #plan table.standard-plan td {
-  border-top: 1px solid #c0c0c0;
   border-left: 4px solid #442606;
   border-right: 4px solid #442606;
 }
 
 main #plan table.standard-plan th {
-  border-top: 4px solid #442606;
   color: #fff;
+  border-top: 4px solid #442606;
   background-color: #442606;
 }
 
@@ -607,6 +617,10 @@ main #plan a:hover {
     width: 100%;
   }
 
+  main #plan {
+    margin-bottom: 30px;
+  }
+
   main #plan table {
     margin-bottom: 20px;
   }
@@ -638,5 +652,15 @@ main #plan a:hover {
 
   main #tertiary-service .event-group a div.text {
     padding: 20px;
+  }
+
+  main #plan table th,
+  main #plan table td {
+    height: 45px;
+  }
+
+  main #plan table td.price {
+    height: 75px;
+    line-height: 1;
   }
 }
