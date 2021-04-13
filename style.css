@@ -192,7 +192,8 @@ main #secondary-service .card .card-body p {
   line-height: 3;
 }
 
-main #secondary-service .card .card-body a.card-link {
+main #secondary-service .card .card-body a.card-link,
+main #plan a {
   color: #fff;
   font-size: 12px;
   background-color: #000;
@@ -356,13 +357,20 @@ main #plan .text p {
   font-weight: 300;
 }
 
+main #plan .plan-menu {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 main #plan ul {
   margin-bottom: 30px;
+  width: 360px;
+  padding: 0;
 }
 
 main #plan .list-group-item {
   width: 100%;
-  height: auto;
   color: #000;
   font-size: 14px;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
@@ -398,6 +406,10 @@ main #plan .price span::before {
   font-size: 15px;
 }
 
+main #plan .middle {
+  margin: 0 25px;
+}
+
 main #plan .middle li {
   border-left: 4px solid #442606;
   border-right: 4px solid #442606;
@@ -409,22 +421,16 @@ main #plan .middle li.head {
   background-color: #442606;
 }
 
+main #plan .middle .price {
+  height: 119px;
+}
+
 main #plan .middle .bottom {
   border-bottom: 4px solid #442606;
 }
 
 main #plan a {
   text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-  background-color: #000;
-  height: 60px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  transition-duration: 0.7s;
-  margin: 0 auto;
-  max-width: 200px;
 }
 
 main #plan a:hover {
@@ -624,11 +630,15 @@ main #plan a:hover {
   }
 
   main #plan .list-group-item {
-    padding: 10px;
+    padding: 12px;
   }
 
   main #plan .list-group-item.price {
     padding: 20px;
+  }
+
+  main #plan .middle {
+    margin-bottom: 23px;
   }
 }
 
@@ -639,6 +649,14 @@ main #plan a:hover {
 
   main #tertiary-service .event-group a div.text {
     padding: 20px;
+  }
+
+  main #plan .plan-menu {
+    display: block;
+  }
+
+  main #plan ul {
+    width: 100%;
   }
 
   main #plan .list-group-item {
@@ -657,11 +675,20 @@ main #plan a:hover {
     font-size: 35px;
   }
 
+  main #plan .list-group-item.price {
+    padding: 7px;
+  }
+
+  main #plan .middle {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   main #plan .middle li.head {
     padding: 5px;
   }
 
-  main #plan .list-group-item.price {
-    padding: 7px;
+  main #plan .middle .price {
+    height: 75px;
   }
 }
