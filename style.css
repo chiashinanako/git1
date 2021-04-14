@@ -359,6 +359,23 @@ main #plan .text p {
 
 main #plan .plan-menu {
   display: flex;
+<<<<<<< HEAD
+}
+
+main #plan ul {
+  width: 360px;
+}
+
+main #plan .list-group-item {
+  color: #000;
+  font-size: 14px;
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+=======
   margin-right: auto;
   margin-left: auto;
 }
@@ -379,6 +396,7 @@ main #plan .list-group-item {
   text-align: center;
 }
 
+>>>>>>> 5d9c94b34bc9dd0771c52d2b7f10ff0e71e30b77
 main #plan .head {
   background-color: #a19283;
   color: #fff;
@@ -391,6 +409,38 @@ main #plan .head {
 main #plan .price {
   height: 125px;
   background: #ece9e6;
+<<<<<<< HEAD
+}
+
+main #plan .price span {
+  color: #442506;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "メイリオ", Meiryo, sans-serif;
+}
+
+main #plan .price span::before {
+  content: "￥";
+  font-size: 15px;
+}
+
+main #plan .middle li {
+  border-left: 4px solid #442606;
+  border-right: 4px solid #442606;
+}
+
+main #plan .middle .list-group-item.head {
+  color: #fff;
+  border-top: 4px solid #442606;
+  background-color: #442606;
+}
+
+main #plan .middle .bottom {
+  border-bottom: 4px solid #442606;
+}
+
+=======
 }
 
 main #plan .price span {
@@ -429,6 +479,7 @@ main #plan .middle .bottom {
   border-bottom: 4px solid #442606;
 }
 
+>>>>>>> 5d9c94b34bc9dd0771c52d2b7f10ff0e71e30b77
 main #plan a {
   text-decoration: none;
 }
@@ -637,8 +688,13 @@ main #plan a:hover {
     padding: 20px;
   }
 
+<<<<<<< HEAD
+  main #plan .middle .list-group-item.head {
+    padding: 10px;
+=======
   main #plan .middle {
     margin-bottom: 23px;
+>>>>>>> 5d9c94b34bc9dd0771c52d2b7f10ff0e71e30b77
   }
 }
 
@@ -679,6 +735,15 @@ main #plan a:hover {
     padding: 7px;
   }
 
+<<<<<<< HEAD
+  main #plan .middle .price {
+    height: 75px;
+  }
+
+  main #plan .middle .list-group-item.head {
+    padding: 5px;
+  }
+=======
   main #plan .middle {
     margin-right: 0;
     margin-left: 0;
@@ -691,4 +756,5 @@ main #plan a:hover {
   main #plan .middle .price {
     height: 75px;
   }
+>>>>>>> 5d9c94b34bc9dd0771c52d2b7f10ff0e71e30b77
 }
