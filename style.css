@@ -381,6 +381,7 @@ main #plan .head {
   font-weight: 600;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  border: none;
 }
 
 main #plan .price {
@@ -612,7 +613,8 @@ main #plan a:hover {
   }
 
   main #plan .middle .list-group-item.head {
-    padding: 10px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -648,7 +650,7 @@ main #plan a:hover {
 
   main #plan .list-group-item {
     height: 45px;
-    padding: 10px;
+    padding: 8px;
     overflow: hidden;
   }
 
@@ -670,7 +672,7 @@ main #plan a:hover {
     height: 75px;
   }
 
-  main #plan .middle .list-group-item.head {
-    padding: 5px;
+  main #plan a {
+    margin-bottom: 20px;
   }
 }
