@@ -621,6 +621,10 @@ main #plan a:hover {
     padding-left: 0;
   }
 
+  main #plan .middle .list-group-item.price {
+    padding: 20px;
+  }
+
   main #plan .middle .bottom {
     padding-bottom: 10px;
   }
@@ -676,8 +680,9 @@ main #plan a:hover {
     padding: 7px;
   }
 
-  main #plan .middle .price {
+  main #plan .middle .list-group-item.price {
     height: 75px;
+    padding: 5px;
   }
 
   main #plan a {
