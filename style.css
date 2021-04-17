@@ -648,7 +648,7 @@ main #plan a:hover {
     width: 100%;
   }
 
-  main #plan .list-group-item {
+  main #plan .list-group-item .head {
     height: 45px;
     padding: 8px;
     overflow: hidden;
