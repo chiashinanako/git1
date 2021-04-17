@@ -612,9 +612,17 @@ main #plan a:hover {
     padding: 20px;
   }
 
+  main #plan .middle .list-group-item {
+    padding: 12px;
+  }
+
   main #plan .middle .list-group-item.head {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  main #plan .middle .bottom {
+    padding-bottom: 10px;
   }
 }
 
