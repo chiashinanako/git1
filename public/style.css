@@ -192,7 +192,8 @@ main #secondary-service .card .card-body p {
   line-height: 3;
 }
 
-main #secondary-service .card .card-body a.card-link {
+main #secondary-service .card .card-body a.card-link,
+main #plan a {
   color: #fff;
   font-size: 12px;
   background-color: #000;
@@ -207,6 +208,10 @@ main #secondary-service .card .card-body a.card-link {
 
 main #secondary-service .card .card-body a.card-link:hover {
   background-color: #734e30;
+}
+
+main #tertiary-service {
+  margin-bottom: 90px;
 }
 
 main #tertiary-service .background {
@@ -322,6 +327,183 @@ main #tertiary-service .summary a:hover {
 
 main #tertiary-service .summary a::after {
   content: "＞";
+}
+
+main #plan {
+  margin-bottom: 65px;
+}
+
+main #plan .text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main #plan .text h2 {
+  color: #442506;
+  font-size: 36px;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+main #plan .text p {
+  color: #000;
+  font-size: 13px;
+  line-height: 2.5;
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-weight: 300;
+}
+
+main #plan .plan-menu {
+  display: flex;
+}
+
+main #plan ul {
+  width: 360px;
+}
+
+main #plan .list-group-item {
+  color: #000;
+  font-size: 14px;
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+main #plan .head {
+  background-color: #a19283;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  border: none;
+}
+
+main #plan .price {
+  height: 125px;
+  background: #ece9e6;
+}
+
+main #plan .price span {
+  color: #442506;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "メイリオ", Meiryo, sans-serif;
+}
+
+main #plan .price span::before {
+  content: "￥";
+  font-size: 15px;
+}
+
+main #plan .middle li {
+  border-left: 4px solid #442606;
+  border-right: 4px solid #442606;
+}
+
+main #plan .middle .list-group-item.head {
+  color: #fff;
+  background-color: #442606;
+}
+
+main #plan .middle .bottom {
+  border-bottom: 4px solid #442606;
+  padding-bottom: 17px;
+}
+
+main #plan a {
+  text-decoration: none;
+}
+
+main #plan a:hover {
+  background-color: #442506;
+}
+
+main #book-cowork {
+  background-image: url("./img/book-cowork.jpg");
+  height: 500px;
+  margin-bottom: 40px;
+  padding: 100px 0;
+}
+
+main #book-cowork .container {
+  padding: 0;
+}
+
+main #book-cowork .text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main #book-cowork h1 {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+main #book-cowork p {
+  font-size: 13px;
+  line-height: 2;
+}
+
+main #book-cowork .container {
+  display: flex;
+  max-width: 800px;
+}
+
+main #book-cowork a {
+  margin: 0 auto;
+}
+
+main #book-cowork .book,
+main #book-cowork .cowork {
+  position: relative;
+}
+
+main #book-cowork .img-box {
+  overflow: hidden;
+  width: 100%;
+}
+
+main #book-cowork img {
+  transition-duration: 1s;
+}
+
+main #book-cowork img:hover {
+  transform: scale(1.2);
+}
+
+main #book-cowork .book::before,
+main #book-cowork .cowork::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 230px;
+  height: 0;
+  border-bottom: 120px solid #fff;
+  border-left: 60px solid transparent;
+}
+
+main #book-cowork span {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  z-index: 2;
+  font-size: 16px;
+  color: #442506;
+  text-decoration: none;
 }
 
 /*モバイル用*/
@@ -464,6 +646,10 @@ main #tertiary-service .summary a::after {
     height: 45px;
   }
 
+  main #tertiary-service {
+    margin-bottom: 40px;
+  }
+
   main #tertiary-service .background {
     padding: 30px 0;
   }
@@ -490,6 +676,61 @@ main #tertiary-service .summary a::after {
   main #tertiary-service .event-group a .text {
     width: 100%;
   }
+
+  main #plan {
+    margin-bottom: 30px;
+  }
+
+  main #plan ul {
+    margin-bottom: 20px;
+  }
+
+  main #plan .list-group-item {
+    padding: 12px;
+  }
+
+  main #plan .list-group-item.price,
+  main #plan .middle .list-group-item.price {
+    padding: 20px;
+  }
+
+  main #plan .middle .list-group-item {
+    padding: 12px;
+  }
+
+  main #plan .middle .list-group-item.head {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  main #plan .middle .bottom {
+    padding-bottom: 10px;
+  }
+
+  main #book-cowork {
+    height: 500px;
+    padding: 50px 0;
+  }
+
+  main #book-cowork .text {
+    margin: 0 20px;
+  }
+
+  main #book-cowork h1 {
+    font-size: 25px;
+  }
+
+  main #book-cowork .container {
+    width: 350px;
+  }
+
+  main #book-cowork a {
+    padding: 0;
+  }
+
+  main #book-cowork .book {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -499,5 +740,59 @@ main #tertiary-service .summary a::after {
 
   main #tertiary-service .event-group a div.text {
     padding: 20px;
+  }
+
+  main #plan .text {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  main #plan .text h2 {
+    font-size: 20px;
+  }
+
+  main #plan .text p {
+    line-height: 2.2;
+  }
+
+  main #plan .plan-menu {
+    display: block;
+  }
+
+  main #plan ul {
+    width: 100%;
+  }
+
+  main #plan .list-group-item .head {
+    height: 45px;
+    padding: 8px;
+    overflow: hidden;
+  }
+
+  main #plan li.price,
+  main #plan .middle .list-group-item.price {
+    height: 75px;
+    padding: 5px;
+    line-height: 1.3;
+  }
+
+  main #plan li.price span {
+    font-size: 35px;
+  }
+
+  main #plan .list-group-item.price {
+    padding: 7px;
+  }
+
+  main #plan a {
+    margin-bottom: 20px;
+  }
+
+  main #book-cowork {
+    height: auto;
+  }
+
+  main #book-cowork h1 {
+    font-size: 20px;
   }
 }
