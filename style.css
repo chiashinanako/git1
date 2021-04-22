@@ -425,6 +425,88 @@ main #plan a:hover {
   background-color: #442506;
 }
 
+
+main #book-cowork {
+  background-image: url("./img/book-cowork.jpg");
+  height: 500px;
+  margin-bottom: 40px;
+  padding: 100px 0;
+}
+
+main #book-cowork .container {
+  padding: 0;
+}
+
+main #book-cowork .text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main #book-cowork h1 {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+main #book-cowork p {
+  font-size: 13px;
+  line-height: 2;
+}
+
+main #book-cowork .container {
+  display: flex;
+  max-width: 800px;
+}
+
+main #book-cowork a {
+  margin: 0 auto;
+}
+
+main #book-cowork .book,
+main #book-cowork .cowork {
+  position: relative;
+}
+
+main #book-cowork .img-box {
+  overflow: hidden;
+  width: 100%;
+}
+
+main #book-cowork img {
+  transition-duration: 1s;
+}
+
+main #book-cowork img:hover {
+  transform: scale(1.2);
+}
+
+main #book-cowork .book::before,
+main #book-cowork .cowork::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 230px;
+  height: 0;
+  border-bottom: 120px solid #fff;
+  border-left: 60px solid transparent;
+}
+
+main #book-cowork span {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  z-index: 2;
+  font-size: 16px;
+  color: #442506;
+  text-decoration: none;
+}
+
 /*モバイル用*/
 @media screen and (max-width: 991px) {
   header {
@@ -625,6 +707,31 @@ main #plan a:hover {
   main #plan .middle .bottom {
     padding-bottom: 10px;
   }
+
+  main #book-cowork {
+    height: 500px;
+    padding: 50px 0;
+  }
+
+  main #book-cowork .text {
+    margin: 0 20px;
+  }
+
+  main #book-cowork h1 {
+    font-size: 25px;
+  }
+
+  main #book-cowork .container {
+    width: 350px;
+  }
+
+  main #book-cowork a {
+    padding: 0;
+  }
+
+  main #book-cowork .book {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -680,5 +787,13 @@ main #plan a:hover {
 
   main #plan a {
     margin-bottom: 20px;
+  }
+  
+  main #book-cowork {
+    height: auto;
+  }
+
+  main #book-cowork h1 {
+    font-size: 20px;
   }
 }
