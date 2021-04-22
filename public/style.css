@@ -425,6 +425,7 @@ main #plan a:hover {
   background-color: #442506;
 }
 
+
 main #book-cowork {
   background-image: url("./img/book-cowork.jpg");
   height: 500px;
@@ -787,7 +788,7 @@ main #book-cowork span {
   main #plan a {
     margin-bottom: 20px;
   }
-
+  
   main #book-cowork {
     height: auto;
   }
