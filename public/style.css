@@ -451,8 +451,7 @@ main #book-cowork p {
   line-height: 2;
 }
 
-main #book-cowork .book,
-main #book-cowork .cowork {
+main #book-cowork a {
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -472,8 +471,7 @@ main #book-cowork a:hover img {
   transform: scale(1.2);
 }
 
-main #book-cowork .book::before,
-main #book-cowork .cowork::before {
+main #book-cowork a::before {
   position: absolute;
   content: "";
   z-index: 1;
@@ -781,8 +779,7 @@ main #book-cowork span {
     width: 100%;
   }
 
-  main #book-cowork .book::before,
-  main #book-cowork .cowork::before {
+  main #book-cowork a::before {
     width: 185px;
   }
 
