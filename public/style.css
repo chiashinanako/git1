@@ -338,7 +338,8 @@ main #plan .text {
   margin-bottom: 50px;
 }
 
-main #plan .text h2 {
+main #plan .text h2,
+main #book-cowork h2 {
   color: #442506;
   font-size: 36px;
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
@@ -423,6 +424,70 @@ main #plan a {
 
 main #plan a:hover {
   background-color: #442506;
+}
+
+main #book-cowork {
+  background-image: url("./img/book-cowork.jpg");
+  margin-bottom: 40px;
+  padding: 115px 0;
+}
+
+main #book-cowork .container {
+  display: flex;
+}
+
+main #book-cowork .text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main #book-cowork h2 {
+  color: #fff;
+}
+
+main #book-cowork p {
+  font-size: 13px;
+  line-height: 2;
+}
+
+main #book-cowork a {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main #book-cowork .img-box {
+  overflow: hidden;
+}
+
+main #book-cowork img {
+  transition-duration: 1s;
+}
+
+main #book-cowork a:hover img {
+  transform: scale(1.2);
+}
+
+main #book-cowork a::before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 230px;
+  height: 0;
+  border-bottom: 120px solid #fff;
+  border-left: 60px solid transparent;
+}
+
+main #book-cowork span {
+  position: absolute;
+  z-index: 2;
+  padding-right: 45px;
+  font-size: 16px;
+  color: #442506;
+  text-decoration: none;
 }
 
 /*モバイル用*/
@@ -625,6 +690,30 @@ main #plan a:hover {
   main #plan .middle .bottom {
     padding-bottom: 10px;
   }
+
+  main #book-cowork {
+    padding: 50px 0;
+  }
+
+  main #book-cowork .text {
+    margin: 0 20px;
+  }
+
+  main #book-cowork h2 {
+    font-size: 25px;
+  }
+
+  main #book-cowork .container {
+    width: 350px;
+  }
+
+  main #book-cowork a {
+    padding: 0;
+  }
+
+  main #book-cowork .book {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -680,5 +769,21 @@ main #plan a:hover {
 
   main #plan a {
     margin-bottom: 20px;
+  }
+
+  main #book-cowork h2 {
+    font-size: 20px;
+  }
+
+  main #book-cowork .row {
+    width: 100%;
+  }
+
+  main #book-cowork a::before {
+    width: 185px;
+  }
+
+  main #book-cowork span {
+    padding-right: 30px;
   }
 }
